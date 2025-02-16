@@ -107,7 +107,7 @@ def update_display():
 def speak_text(text):
     """Converts text to speech using OpenAI API."""
     try:
-        openai.api_key = "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"
+        openai.api_key = "EMPTY KEY"
         response = openai.Audio.create(model="tts-1", text=text, voice="alloy")
         with open("output.mp3", "wb") as f:
             f.write(response["audio"])
